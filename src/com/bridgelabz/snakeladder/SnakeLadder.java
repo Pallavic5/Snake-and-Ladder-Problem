@@ -12,6 +12,7 @@ public class SnakeLadder {
 		
 		while(playerStartPosition < 100) {
 			
+			
 			int playerRollDice = (int)(Math.random() * 6) + 1;
 			System.out.println("Player get a dice number: " + playerRollDice);
 			
