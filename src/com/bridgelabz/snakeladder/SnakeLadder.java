@@ -7,6 +7,7 @@ public class SnakeLadder {
 		final int NO_PLAY = 0;
 		final int LADDER = 1;
 		final int SNAKE = 2;
+		int count = 0;
 		
 		int playerStartPosition = 0;
 		
@@ -15,6 +16,7 @@ public class SnakeLadder {
 			
 			int playerRollDice = (int)(Math.random() * 6) + 1;
 			System.out.println("Player get a dice number: " + playerRollDice);
+			++count;
 			
 			int optionCheck = (int) (Math.random() * 100) % 3;
 			System.out.println("Optioncheck: " + optionCheck);
@@ -39,8 +41,9 @@ public class SnakeLadder {
 			
 			if(playerStartPosition < 0)
 				playerStartPosition = 0;
-			System.out.println("PlayerPosition: " + playerStartPosition);
+			System.out.println("PlayerPosition: " + playerStartPosition + "\nDice count: " + count);
 			
 		}
+
 	}
 }
